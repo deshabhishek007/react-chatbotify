@@ -34,7 +34,7 @@ export const DefaultSettings: Settings = {
 	},
 	tooltip: {
 		mode: "CLOSE",
-		text: "Talk to me! 😊",
+		text: "Make a Wish 🧞",
 	},
 	chatButton: {
 		icon: ChatIcon,
@@ -44,7 +44,7 @@ export const DefaultSettings: Settings = {
 			<div style={{cursor: "pointer", margin: 0, fontSize: 20, fontWeight: "bold"}} onClick={
 				() => window.open("https://github.com/tjtanjin/")
 			}>
-				Tan Jin
+				Mr. Genie
 			</div>
 		),
 		showAvatar: true,
