@@ -2,9 +2,9 @@ import { Settings } from "../../types/Settings";
 import { Button } from "../Button";
 
 import actionDisabledIcon from "../../assets/action_disabled_icon.svg";
-import botAvatar from "../../assets/bot_avatar.svg";
+import botAvatar from "../../assets/genie.png";
 import userAvatar from "../../assets/user_avatar.svg";
-import { ReactComponent as ChatIcon } from "../../assets/chat_icon.svg";
+import ChatIcon from "../../assets/chirag.png";
 import { ReactComponent as FileAttachmentIcon } from '../../assets/file_attachment_icon.svg';
 import { ReactComponent as NotificationIcon } from '../../assets/notification_icon.svg';
 import { ReactComponent as NotificationIconDisabled } from '../../assets/notification_icon_disabled.svg';
@@ -20,13 +20,13 @@ import notificationSound from "../../assets/notification_sound.wav";
 // default settings provided to the bot
 export const DefaultSettings: Settings = {
 	general: {
-		primaryColor: "#42b0c5",
-		secondaryColor: "#491d8d",
+		primaryColor: "#d3b6ff",
+		secondaryColor: "#f796ff",
 		fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', " +
 			"'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', " +
 			"sans-serif",
 		showHeader: true,
-		showFooter: true,
+		showFooter: false,
 		showInputRow: true,
 		actionDisabledIcon: actionDisabledIcon,
 		embedded: false,
@@ -41,9 +41,7 @@ export const DefaultSettings: Settings = {
 	},
 	header: {
 		title: (
-			<div style={{cursor: "pointer", margin: 0, fontSize: 20, fontWeight: "bold"}} onClick={
-				() => window.open("https://github.com/tjtanjin/")
-			}>
+			<div style={{cursor: "pointer", margin: 0, fontSize: 20, fontWeight: "bold"}}>
 				Mr. Genie
 			</div>
 		),
